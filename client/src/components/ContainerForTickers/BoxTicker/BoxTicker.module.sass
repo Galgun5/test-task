@@ -1,0 +1,51 @@
+.BoxTicker
+  color: black
+  display: flex
+  flex-direction: row
+  border-radius: 5px
+  border: 1px solid #867979
+  padding: 7px
+  box-shadow: 1px 1px 1px #b0b0b0
+  background: rgb(255, 255, 255)
+  font-size: 14px
+  cursor: pointer
+  position: relative
+
+
+  &.price
+    color: #CBD0D4
+
+  & div
+    display: flex
+    flex-direction: column
+    text-align: left
+    & .changePrice
+      text-align: right
+      width: 60px
+
+
+.green
+  color: #51975E
+
+.red
+  color: #E55F4A
+
+.HoverDiv
+  width: 60px
+  color: #0d1805
+  background: #a9b1c5
+  border-radius: 5px
+  border: 1px solid black
+  padding: 5px 0
+
+  position: absolute
+  top: 20%
+  right: -62px
+  z-index: 10
+  cursor: pointer
+  &:hover
+    text-decoration: underline
+  &:active
+    transform: scale(.9)
+
+
