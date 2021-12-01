@@ -13,6 +13,8 @@ const ContainerForTickers = () => {
         let cleanupFunction = false;
         getTickersData(cleanupFunction)
         return () => cleanupFunction = true;
+        
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
 
